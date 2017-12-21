@@ -40,7 +40,7 @@ public class CommonMultiRecyclerViewActivity extends BaseActivity {
         newCommonMultiAdapter.setClickListener(new CommonRecyclerViewHolder.OnClickListener() {
             @Override
             public void onClick(int position) {
-                toast("点击" + "\n" + newList.get(position).getTitle() + "\n" + newList.get(position).getContent());
+                toast("单击" + "\n" + newList.get(position).getTitle() + "\n" + newList.get(position).getContent());
             }
         });
         newCommonMultiAdapter.setLongClickListener(new CommonRecyclerViewHolder.OnLongClickListener() {
@@ -68,7 +68,7 @@ public class CommonMultiRecyclerViewActivity extends BaseActivity {
     }
 
     public void addData(View view) {
-        newList.add(0, new New(index++, "叶啊叶", "hi " + index));
+        newList.add(0, new New(index++, "叶应是叶", "leavesC " + index));
         newCommonMultiAdapter.setData(newList);
     }
 

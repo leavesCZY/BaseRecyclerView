@@ -83,7 +83,7 @@ public class CommonRecyclerViewActivity extends BaseActivity {
     }
 
     public void addData(View view) {
-        newList.add(0, new New(index++, "叶啊叶 " + index, "hi"));
+        newList.add(0, new New(index++, "叶应是叶 " + index, "leavesC"));
         sort();
         newCommonAdapter.setData(newList);
     }
