@@ -53,6 +53,8 @@ public class CommonRecyclerViewActivity extends BaseActivity {
         });
         rv_commonDataList.setAdapter(newCommonAdapter);
         CommonItemDecoration commonItemDecoration = new CommonItemDecoration(ContextCompat.getDrawable(this, R.drawable.divider), LinearLayoutManager.VERTICAL);
+        commonItemDecoration.setLeftMargin(20);
+        commonItemDecoration.setRightMargin(50);
         rv_commonDataList.addItemDecoration(commonItemDecoration);
     }
 
